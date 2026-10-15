@@ -2,87 +2,126 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
 <title>杨阿姨 · 育儿师简历</title>
 <meta name="description" content="杨阿姨·育儿师简历·英语本科·7年经验·C1驾驶证·专业英语四级·可全天白班·成都武侯" />
 <meta name="theme-color" content="#e07a3c" />
 <style>
-  :root{--warm:#fff7ec;--warm2:#fbe7c6;--accent:#e07a3c;--accent2:#c25a23;--ink:#2a2a2a;--soft:#555;--line:#eadcc3;--tagbg:#f4d9b3;}
+  :root{
+    --warm:#fff7ec; --warm2:#fbe7c6;
+    --accent:#e07a3c; --accent2:#c25a23;
+    --ink:#2a2a2a; --soft:#555; --line:#eadcc3; --tagbg:#f4d9b3;
+    /* 基础字号使用 clamp：小屏 17px 起步，桌面 20px 封顶，自动平滑缩放 */
+    --fs-base: clamp(17px, 1.6vw + 13px, 20px);
+    --fs-h1: clamp(32px, 4vw + 18px, 44px);
+    --fs-h2: clamp(20px, 1.5vw + 14px, 26px);
+    --fs-h3: clamp(19px, 1.4vw + 13px, 24px);
+    --fs-meta: clamp(15px, 0.7vw + 12px, 17px);
+  }
   *{box-sizing:border-box}
-  html,body{margin:0;padding:0;background:#f3ede4;font-family:"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);font-size:14px;line-height:1.65}
-  .page{max-width:880px;min-width:880px;margin:14px auto;background:#fff;border-radius:14px;box-shadow:0 6px 18px rgba(120,70,20,.08);overflow:hidden;border:1px solid #efe4d2}
-  .head{display:flex;gap:28px;padding:30px 36px 22px;background:linear-gradient(135deg,#fff7ec 0%,#ffe2bf 100%);border-bottom:1px solid var(--line)}
+  html,body{margin:0;padding:0;background:#f3ede4;font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:var(--ink);font-size:var(--fs-base);line-height:1.7}
+  .page{max-width:960px;margin:18px auto;background:#fff;border-radius:14px;box-shadow:0 6px 18px rgba(120,70,20,.08);overflow:hidden;border:1px solid #efe4d2}
+
+  /* ===== 头部 ===== */
+  .head{display:flex;gap:24px;padding:28px 28px 22px;background:linear-gradient(135deg,#fff7ec 0%,#ffe2bf 100%);border-bottom:1px solid var(--line)}
   .photo{width:180px;height:240px;border-radius:10px;overflow:hidden;background:#fff;border:3px solid #fff;box-shadow:0 4px 12px rgba(0,0,0,.08);flex-shrink:0}
   .photo img{width:100%;height:100%;object-fit:cover;display:block}
   .head-info{flex:1;min-width:0}
-  .name{font-size:30px;font-weight:700;color:var(--accent2);letter-spacing:1px}
-  .name small{font-size:14px;color:#9a9a9a;font-weight:400;margin-left:8px;letter-spacing:0}
-  .slogan{font-size:14px;color:var(--accent2);font-weight:600;letter-spacing:1px;margin-top:6px;padding-left:2px;border-left:3px solid var(--accent);padding:2px 0 2px 8px;background:linear-gradient(to right,rgba(224,122,60,.08),transparent 60%)}
-  .tags-row{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
-  .pill{background:var(--accent);color:#fff;padding:3px 10px;border-radius:20px;font-size:12px}
+  .name{font-size:var(--fs-h1);font-weight:700;color:var(--accent2);letter-spacing:1px;line-height:1.15}
+  .name small{font-size:0.45em;color:#9a9a9a;font-weight:400;margin-left:8px;letter-spacing:0}
+  .slogan{font-size:0.95em;color:var(--accent2);font-weight:600;letter-spacing:1px;margin-top:8px;padding:4px 0 4px 10px;border-left:3px solid var(--accent);background:linear-gradient(to right,rgba(224,122,60,.08),transparent 60%)}
+  .tags-row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 14px}
+  .pill{background:var(--accent);color:#fff;padding:5px 12px;border-radius:20px;font-size:0.85em;font-weight:500}
   .pill.alt{background:#fff;color:var(--accent2);border:1px solid var(--accent2)}
-  .meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px 18px;margin-top:8px}
+  .meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px 18px;margin-top:8px}
   .meta{display:flex;flex-direction:column}
-  .meta .k{font-size:11px;color:#999;letter-spacing:.5px}
-  .meta .v{font-size:13px;color:var(--ink);font-weight:600;margin-top:2px}
-  .intro{font-size:13.5px;color:var(--soft);margin-top:14px;line-height:1.85;text-align:justify}
-  section{padding:18px 36px;border-bottom:1px solid var(--line)}
+  .meta .k{font-size:0.78em;color:#999;letter-spacing:.5px}
+  .meta .v{font-size:0.95em;color:var(--ink);font-weight:700;margin-top:2px}
+  .intro{font-size:0.96em;color:var(--soft);margin-top:14px;line-height:1.85;text-align:justify}
+
+  /* ===== 通用 section ===== */
+  section{padding:20px 28px;border-bottom:1px solid var(--line)}
   section:last-child{border-bottom:none}
-  .sec-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--accent2);margin:0 0 12px}
-  .sec-title::before{content:"";display:inline-block;width:5px;height:18px;background:var(--accent);border-radius:3px}
-  .skill-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
-  .skill{background:var(--tagbg);color:var(--accent2);padding:6px 4px;border-radius:6px;font-size:12.5px;text-align:center;border:1px solid #f0c896}
-  .exp{display:grid;grid-template-columns:140px 1fr;gap:18px;margin-bottom:18px}
-  .exp:last-child{margin-bottom:0}
-  .exp .time{font-weight:700;color:var(--accent2);font-size:13px}
-  .exp .time small{display:block;color:#aaa;font-weight:400;margin-top:2px}
-  .exp .body h4{margin:0 0 6px;font-size:14.5px}
-  .exp .body p{margin:0;color:var(--soft);font-size:13px}
-  .exp .body ul{margin:6px 0 0;padding-left:18px;color:var(--soft);font-size:13px}
-  .exp .body ul li{margin-bottom:3px}
-  .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-  .cert{border:1px solid var(--line);border-left:4px solid var(--accent);background:#fffaf0;padding:10px 14px;border-radius:6px}
-  .cert .n{font-weight:700;color:var(--ink);font-size:13.5px}
-  .cert .d{font-size:12px;color:#999;margin-top:2px}
-  .dishes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-  .dishes figure{margin:0}
-  .dishes img{width:100%;height:160px;object-fit:cover;border-radius:8px;display:block;border:1px solid var(--line)}
-  .dishes figcaption{font-size:11.5px;color:#999;text-align:center;margin-top:4px}
-  .contact{background:#fff7ec;padding:18px 36px;border-bottom:1px solid var(--line)}
+  .sec-title{display:flex;align-items:center;gap:10px;font-size:var(--fs-h2);font-weight:700;color:var(--accent2);margin:0 0 14px;line-height:1.25}
+  .sec-title::before{content:"";display:inline-block;width:5px;height:20px;background:var(--accent);border-radius:3px}
+
+  /* ===== 专业技能 ===== */
+  .skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px}
+  .skill{background:var(--tagbg);color:var(--accent2);padding:10px 8px;border-radius:8px;font-size:0.95em;font-weight:600;text-align:center;border:1px solid #f0c896}
+
+  /* ===== 联系方式 ===== */
+  .contact{background:#fff7ec;padding:18px 28px;border-bottom:1px solid var(--line)}
   .contact-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
-  .contact a{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:8px 16px;border-radius:24px;text-decoration:none;font-size:13px;font-weight:600}
+  .contact a{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:12px 18px;border-radius:26px;text-decoration:none;font-size:1em;font-weight:600;transition:transform .15s}
   .contact a.alt{background:#fff;color:var(--accent2);border:1px solid var(--accent2)}
-  .usp-block{margin-top:12px;background:linear-gradient(135deg,#fff7ec 0%,#ffe2bf 100%);border:1px solid #f0c896;border-left:4px solid var(--accent);border-radius:8px;padding:10px 14px}
-  .usp-title{font-size:12.5px;font-weight:700;color:var(--accent2);letter-spacing:.5px;margin-bottom:6px}
-  .usp-block ul{margin:0;padding-left:18px}
-  .usp-block ul li{margin-bottom:4px;font-size:13px;line-height:1.7}
-  .pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-  .pain-card{background:#fffaf0;border:1px solid var(--line);border-radius:8px;padding:12px;transition:all .2s}
-  .pain-card:hover{border-color:var(--accent);box-shadow:0 4px 12px rgba(224,122,60,.1);transform:translateY(-2px)}
-  .pain-icon{font-size:24px;margin-bottom:4px}
-  .pain-title{font-weight:700;color:var(--accent2);font-size:13.5px;margin-bottom:4px}
-  .pain-desc{font-size:12px;color:var(--soft);line-height:1.6}
-  .achievement{margin-top:10px;background:#fff7ec;border:1px solid #f0c896;border-left:4px solid var(--accent);border-radius:6px;padding:8px 12px}
-  .ach-title{font-size:12px;font-weight:700;color:var(--accent2);letter-spacing:.5px;margin-bottom:4px}
-  .achievement ul{margin:0;padding-left:18px}
-  .achievement ul li{margin-bottom:2px;font-size:12.5px}
-  footer{background:#fff7ec;padding:14px 36px;font-size:12px;color:#9a9a9a;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
-    .reviews{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-  .review-quote{background:var(--tagbg);color:var(--accent2);padding:6px 14px;border-radius:18px;font-size:13px;font-weight:600;border:1px solid #f0c896}
-  .review-imgs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+
+  /* ===== 工作经历 ===== */
+  .exp{display:grid;grid-template-columns:170px 1fr;gap:18px;margin-bottom:18px}
+  .exp:last-child{margin-bottom:0}
+  .exp .time{font-weight:700;color:var(--accent2);font-size:1.02em}
+  .exp .time small{display:block;color:#aaa;font-weight:400;margin-top:2px;font-size:0.85em}
+  .exp .body h4{margin:0 0 6px;font-size:1.05em}
+  .exp .body p{margin:0;color:var(--soft);font-size:0.96em}
+  .exp .body ul{margin:6px 0 0;padding-left:20px;color:var(--soft);font-size:0.96em}
+  .exp .body ul li{margin-bottom:4px}
+
+  /* ===== 证书 ===== */
+  .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+  .cert{border:1px solid var(--line);border-left:4px solid var(--accent);background:#fffaf0;padding:14px 16px;border-radius:6px}
+  .cert .n{font-weight:700;color:var(--ink);font-size:1.02em}
+  .cert .d{font-size:0.88em;color:#999;margin-top:4px}
+
+  /* ===== 厨艺 ===== */
+  .dishes{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .dishes figure{margin:0}
+  .dishes img{width:100%;height:180px;object-fit:cover;border-radius:8px;display:block;border:1px solid var(--line)}
+  .dishes figcaption{font-size:0.86em;color:#999;text-align:center;margin-top:5px}
+
+  /* ===== 差异化优势 ===== */
+  .usp-block{margin-top:12px;background:linear-gradient(135deg,#fff7ec 0%,#ffe2bf 100%);border:1px solid #f0c896;border-left:4px solid var(--accent);border-radius:8px;padding:14px 18px}
+  .usp-title{font-size:0.95em;font-weight:700;color:var(--accent2);letter-spacing:.5px;margin-bottom:8px}
+  .usp-block ul{margin:0;padding-left:20px}
+  .usp-block ul li{margin-bottom:6px;font-size:0.96em;line-height:1.75}
+
+  /* ===== 痛点清单 ===== */
+  .pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+  .pain-card{background:#fffaf0;border:1px solid var(--line);border-radius:8px;padding:14px}
+  .pain-icon{font-size:28px;margin-bottom:6px}
+  .pain-title{font-weight:700;color:var(--accent2);font-size:1.05em;margin-bottom:6px}
+  .pain-desc{font-size:0.95em;color:var(--soft);line-height:1.7}
+
+  /* ===== 客户评价 ===== */
+  .reviews{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .review-quote{background:var(--tagbg);color:var(--accent2);padding:8px 16px;border-radius:18px;font-size:0.95em;font-weight:600;border:1px solid #f0c896}
+  .review-imgs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
   .review-imgs figure{margin:0}
-  .review-imgs img{width:100%;height:320px;object-fit:cover;object-position:top;border-radius:8px;border:1px solid var(--line);display:block}
-  .review-imgs figcaption{font-size:11.5px;color:#999;text-align:center;margin-top:4px}
-  
-  </style>
+  .review-imgs img{width:100%;height:280px;object-fit:cover;object-position:top;border-radius:8px;border:1px solid var(--line);display:block}
+  .review-imgs figcaption{font-size:0.85em;color:#999;text-align:center;margin-top:5px}
+
+  /* ===== 工作成果 ===== */
+  .achievement{margin-top:10px;background:#fff7ec;border:1px solid #f0c896;border-left:4px solid var(--accent);border-radius:6px;padding:10px 14px}
+  .ach-title{font-size:0.86em;font-weight:700;color:var(--accent2);letter-spacing:.5px;margin-bottom:4px}
+  .achievement ul{margin:0;padding-left:18px}
+  .achievement ul li{margin-bottom:2px;font-size:0.95em}
+
+  /* ===== 小屏适配:头部纵向排列 + 按钮换行 ===== */
+  @media (max-width:680px){.head{flex-direction:column;align-items:flex-start;padding:20px;gap:16px}.photo{width:130px;height:170px;margin:0}.contact-row{flex-direction:column;align-items:stretch}.contact a{justify-content:center;font-size:1.05em;padding:14px}.exp{grid-template-columns:1fr;gap:6px}.exp .time{font-size:1.05em}.dishes{grid-template-columns:repeat(auto-fit,minmax(140px,1fr))}.dishes img{height:140px}.review-imgs{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}.review-imgs img{height:220px}}
+
+  /* ===== Footer ===== */
+  footer{background:#fff7ec;padding:16px 28px;font-size:0.9em;color:#9a9a9a;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+
+  /* ===== 客户好评引导段 ===== */
+  .sec-intro{font-size:0.92em;color:#999;margin:0 0 12px}
+</style>
 </head>
 <body>
 <div class="page">
+
   <header class="head">
     <div class="photo"><img src="resume_assets/photo.png" alt="杨阿姨" /></div>
     <div class="head-info">
       <div class="name">杨阿姨<small>Yang · Childcare Specialist</small></div>
-      <div class="slogan">孩子的第一位英语老师,也是半个妈妈</div>
+      <div class="slogan">孩子的第一位英语老师，也是半个妈妈</div>
       <div class="tags-row">
         <span class="pill">英语启蒙</span><span class="pill">婴幼儿护理</span><span class="pill">辅食制作</span><span class="pill">蒙氏陪伴</span><span class="pill alt">C1 驾驶证</span><span class="pill alt">专业英语四级</span>
       </div>
@@ -99,17 +138,17 @@
       <p class="intro">
         客户，您好！我是杨阿姨，本科毕业于重庆人文科技学院英语专业。在校期间一次性通过专业英语四级（优秀），并取得中学英语教师资格证、普通话二级甲等。
         毕业后，我先在一家专升本教育机构担任英语教师，把复杂知识"讲得让孩子愿意听"这件事，我从那时起就在练。
-        后来加入一家全英文幼儿园担任主班教师，从小班一直带到毕业班，7 年里完整陪伴了 70 多名 2-6 岁孩子走过人生第一个"小社会"。
+        后来加入马丁叔叔学习乐园担任主班教师，从小班一直带到毕业班，7 年里完整陪伴了 70 多名 2-6 岁孩子走过人生第一个"小社会"。
         在这段日子里，我看到太多孩子本可以更好——有的错过了语言敏感期，有的没养成好习惯，有的吃得不讲究身体底子没打好。我越来越确信：0-6 岁那几年，比上什么兴趣班都重要。
         因此我决定投身白班日间育儿陪伴，把这些年沉淀的英文启蒙、蒙氏理念、正面管教、辅食营养，一对一地给到一个家庭、一个孩子身上。
         我的擅长：双语绘本共读、英文儿歌启蒙、儿童行为习惯引导、辅食添加（6 月龄起）、睡眠照料、出牙护理、洗澡抚触、感官探索游戏；懂大运动（抓握、撑坐、爬行），会用蒙氏方式保护孩子专注力；日常用简单英文和孩子沟通，把语言启蒙揉进吃饭、穿衣、玩耍里。
         此外我也熟悉：手工、绘画、家庭营养餐、中式面点（包子、花卷、烧麦等），能根据宝宝发育节奏安排一日作息。
-
+        已育一个孩子。我的教育理念：寓教于乐，尊重孩子自身成长节奏，保护孩子的好奇心。用心做好日间陪护与启蒙，让家长安心省心。
         <div class="usp-block"><div class="usp-title">我的差异化优势</div><ul>
-          <li><b>专业英语四级 + 教师资格证双证</b> — 启蒙不是"自己会英语就教",我持证且 7 年实操,体系扎实。</li>
-          <li><b>日常用简单英文跟孩子沟通</b> — 吃饭、穿衣、玩耍每一个场景都是语言课,孩子不知不觉开口说。</li>
-          <li><b>英文儿歌 + 绘本 + 日常对话三合一</b> — 多种输入形式切换,孩子不排斥,妈妈群里口碑相传。</li>
-        </ul></div>                已育一个孩子。我的教育理念：寓教于乐，尊重孩子自身成长节奏，保护孩子的好奇心。用心做好日间陪护与启蒙，让家长安心省心。
+          <li><b>专业英语四级 + 教师资格证双证</b> — 启蒙不是"自己会英语就教"，我持证且 7 年实操，体系扎实。</li>
+          <li><b>日常用简单英文跟孩子沟通</b> — 吃饭、穿衣、玩耍每一个场景都是语言课，孩子不知不觉开口说。</li>
+          <li><b>英文儿歌 + 绘本 + 日常对话三合一</b> — 多种输入形式切换，孩子不排斥，妈妈群里口碑相传。</li>
+        </ul></div>
       </p>
     </div>
   </header>
@@ -146,17 +185,17 @@
           <li>每日记录宝宝饮食、睡眠、成长动态，反馈给家长</li>
         </ul>
         <div class="achievement"><div class="ach-title">工作成果</div><ul>
-          <li>辅助宝宝 2 周内从不爬 → 自主左右交替爬行,获得家长「你的方式很好」积极反馈</li>
-          <li>帮助建立规律作息、顺利过渡辅食；每日陪伴记录详尽,家长评价「你做的好详细」</li>
-          <li>融入英文儿歌与生活化英语启蒙,宝宝专注力与适应力明显提升,客户多次点赞</li>
+          <li>辅助宝宝 2 周内从不爬 → 自主左右交替爬行,获得家长积极反馈</li>
+          <li>帮助建立规律作息、顺利过渡辅食；每日陪伴记录详尽,获家长好评</li>
+          <li>融入英文儿歌与生活化英语启蒙,宝宝专注力与适应力明显提升</li>
         </ul></div>
       </div>
     </div>
     <div class="exp">
-      <div class="time">2019 — 2026<small>全英文机构主班</small></div>
+      <div class="time">2019 — 2026<small>全英文主班</small></div>
       <div class="body">
         <h4>马丁叔叔学习乐园 · 全英文主班教师</h4>
-        <p>负责 2–6 岁幼儿日间陪伴与课程落地 7 年。</p>
+        <p>负责 2-6 岁幼儿日间陪伴与课程落地 7 年。</p>
         <ul>
           <li>围绕孩子的兴趣与生活经验设计主题课程</li>
           <li>通过游戏、绘本、儿歌、感官活动培养各方面能力</li>
@@ -164,7 +203,7 @@
           <li>与家长保持每日沟通，反馈孩子成长亮点</li>
         </ul>
         <div class="achievement"><div class="ach-title">工作成果</div><ul>
-          <li>7 年累计陪伴 200+ 名 2–6 岁幼儿,设计主题课程覆盖感官、语言、社交、认知</li>
+          <li>7 年累计陪伴 200+ 名 2-6 岁幼儿,设计主题课程覆盖感官、语言、社交、认知</li>
           <li>学员英文儿歌 / 绘本启蒙效果获家长持续好评,多人转介绍新家庭</li>
           <li>与家长保持每日成长反馈,班级续课率保持高位</li>
         </ul></div>
@@ -197,63 +236,62 @@
       <figure><img src="resume_assets/dish8.png" alt="" /><figcaption>玉米排骨汤 · 营养汤品</figcaption></figure>
       <figure><img src="resume_assets/dish1.png" alt="" /><figcaption>家庭餐桌 · 一日三餐</figcaption></figure>
     </div>
-    <p style="font-size:12px;color:#999;margin:10px 0 0">擅长中式面点（包子、花卷、馒头、烧麦、发糕）、川粤家常菜、宝宝辅食与营养搭配。</p>
+    <p style="font-size:0.9em;color:#999;margin:10px 0 0">擅长中式面点（包子、花卷、馒头、烧麦、发糕）、川粤家常菜、宝宝辅食与营养搭配。</p>
   </section>
-
-
 
   <section>
     <h3 class="sec-title">我能帮到您</h3>
-    <p style="font-size:12.5px;color:#999;margin:0 0 12px">以下场景,都是家长找我最常见的原因 —— 也是我最擅长解决的。</p>
+    <p class="sec-intro">以下场景，都是家长找我最常见的原因 —— 也是我最擅长解决的。</p>
     <div class="pain-grid">
       <div class="pain-card">
         <div class="pain-icon">🍚</div>
         <div class="pain-title">宝宝不爱吃辅食 / 挑食</div>
-        <div class="pain-desc">从 6 月龄起,我可以根据宝宝发育节奏设计辅食方案,做到色香味+营养均衡,孩子从"喂两口就推开"到主动张嘴。</div>
+        <div class="pain-desc">从 6 月龄起，我根据宝宝发育节奏设计辅食方案，做到色香味+营养均衡，孩子从"喂两口就推开"到主动张嘴。</div>
       </div>
       <div class="pain-card">
         <div class="pain-icon">📱</div>
         <div class="pain-title">孩子一玩手机就停不下来</div>
-        <div class="pain-desc">用蒙氏理念 + 感官游戏替代屏幕时间:抓握、拼图、绘本、手工、户外探索,孩子玩得投入,自然忘记电子产品。</div>
+        <div class="pain-desc">用蒙氏理念 + 感官游戏替代屏幕时间：抓握、拼图、绘本、手工、户外探索，孩子玩得投入，自然忘记电子产品。</div>
       </div>
       <div class="pain-card">
         <div class="pain-icon">🗣️</div>
-        <div class="pain-title">想英语启蒙,但自己发音不准</div>
-        <div class="pain-desc">持英语专业四级 + 教师资格证双证,日常用简单英文跟孩子沟通,吃饭穿衣玩耍都是语言课。孩子开口说,妈妈再也不用担心自己口音。</div>
+        <div class="pain-title">想英语启蒙，但自己发音不准</div>
+        <div class="pain-desc">持英语专业四级 + 教师资格证双证，日常用简单英文跟孩子沟通，吃饭穿衣玩耍都是语言课。孩子开口说，妈妈再也不用担心自己口音。</div>
       </div>
       <div class="pain-card">
         <div class="pain-icon">👵</div>
         <div class="pain-title">老人带娃理念冲突</div>
-        <div class="pain-desc">白天由我执行专业育儿方案,晚上家长下班后用文字+视频同步当日要点,让家里"两条线"对齐,减少摩擦。</div>
+        <div class="pain-desc">白天由我执行专业育儿方案，晚上家长下班后用文字+视频同步当日要点，让家里"两条线"对齐，减少摩擦。</div>
       </div>
       <div class="pain-card">
         <div class="pain-icon">😤</div>
         <div class="pain-title">孩子动不动就哭闹 / 脾气大</div>
-        <div class="pain-desc">熟悉正面管教,践行"温柔而坚定"——接纳孩子情绪、守住规则边界。不吼不惯,孩子学会表达,而不是发泄。</div>
+        <div class="pain-desc">熟悉正面管教，践行"温柔而坚定"——接纳孩子情绪、守住规则边界。不吼不惯，孩子学会表达，而不是发泄。</div>
       </div>
       <div class="pain-card">
         <div class="pain-icon">🍳</div>
         <div class="pain-title">一日三餐不知道做什么</div>
-        <div class="pain-desc">擅长川粤家常 + 中式面点(包子、花卷、烧麦、发糕)+ 宝宝辅食与营养搭配,做到大人孩子都吃得好。</div>
+        <div class="pain-desc">擅长川粤家常 + 中式面点（包子、花卷、烧麦、发糕）+ 宝宝辅食与营养搭配，做到大人孩子都吃得好。</div>
       </div>
     </div>
   </section>
 
   <section>
     <h3 class="sec-title">儿童陪伴日常</h3>
-    <p style="font-size:12.5px;color:#999;margin:0 0 12px">除了幼儿园主班教学,我也持续陪伴 0-3 岁小月龄宝宝。把"陪"做成有质量的成长陪伴 —— 英文启蒙、感官探索、辅食添加、行为观察,日复一日。</p>
+    <p class="sec-intro">除了幼儿园主班教学，我也持续陪伴 0-3 岁小月龄宝宝。把"陪"做成有质量的成长陪伴 —— 英文启蒙、感官探索、辅食添加、行为观察，日复一日。</p>
     <div class="review-imgs">
       <figure><img src="resume_assets/accompany1.jpg" alt="儿童陪伴" /><figcaption>树叶片观察 · 感官探索 + 双手协调</figcaption></figure>
       <figure><img src="resume_assets/accompany2.jpg" alt="儿童陪伴" /><figcaption>每日陪伴记录 · 全英文沟通 + 家长同步</figcaption></figure>
     </div>
   </section>
+
   <section>
     <h3 class="sec-title">客户好评</h3>
-    <p style="font-size:12.5px;color:#999;margin:0 0 12px">成都 · 程小玲草市街（化名）· 2026 年 6–9 月 · 全英文启蒙 + 成长陪伴期间真实评价</p>
+    <p class="sec-intro">成都 · 程小玲草市街（化名）· 2026 年 6–9 月 · 全英文启蒙 + 成长陪伴期间真实评价</p>
     <div class="reviews">
       <div class="review-quote">"感谢第一次入园遇到你 ❤️"</div>
-      <div class="review-quote">"你就是我儿子的良师,我的益友 😄"</div>
-      <div class="review-quote">"老师教得好,必须学得快"</div>
+      <div class="review-quote">"你就是我儿子的良师，我的益友 😄"</div>
+      <div class="review-quote">"老师教得好，必须学得快"</div>
       <div class="review-quote">"峥峥越来越好 💕"</div>
       <div class="review-quote">"这些变化只有当妈的能感觉到 ❤️"</div>
       <div class="review-quote">"你做的好详细 👍"</div>
@@ -272,6 +310,7 @@
       <figure><img src="resume_assets/review8.jpg" alt="" /><figcaption>良师益友 · 全家跟着学</figcaption></figure>
     </div>
   </section>
+
   <footer>
     <span>杨阿姨 · 育儿师简历</span>
     <span>编号 009342 · 悦星高端家政</span>
