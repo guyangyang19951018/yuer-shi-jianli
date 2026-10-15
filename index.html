@@ -52,6 +52,13 @@
   .contact a{display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;padding:8px 16px;border-radius:24px;text-decoration:none;font-size:13px;font-weight:600}
   .contact a.alt{background:#fff;color:var(--accent2);border:1px solid var(--accent2)}
   footer{background:#fff7ec;padding:14px 36px;font-size:12px;color:#9a9a9a;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+    .reviews{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .review-quote{background:var(--tagbg);color:var(--accent2);padding:6px 14px;border-radius:18px;font-size:13px;font-weight:600;border:1px solid #f0c896}
+  .review-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .review-imgs figure{margin:0}
+  .review-imgs img{width:100%;height:380px;object-fit:cover;object-position:top;border-radius:8px;border:1px solid var(--line);display:block}
+  .review-imgs figcaption{font-size:11.5px;color:#999;text-align:center;margin-top:4px}
+  @media (max-width:640px){.review-imgs{grid-template-columns:1fr 1fr}.review-imgs img{height:300px}}
   @media (max-width:640px){.head{flex-direction:column;padding:24px}.photo{width:140px;height:180px;margin:0 auto}.meta-grid{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:repeat(3,1fr)}.dishes,.cert-grid{grid-template-columns:1fr 1fr}section{padding:16px 22px}}
 </style>
 </head>
@@ -76,7 +83,7 @@
       </div>
       <p class="intro">
         客户，您好！我是小杨，英语本科，性格温和有活力，了解小朋友，熟悉低龄孩子心理特点，能读懂孩子行为背后的需求。持有英语专业四级、教师资格证、普通话二甲、C2 驾驶证。
-        拥有多年全英文幼儿机构从业经验，日常陪伴 2-6 岁幼儿，同时有 6 月龄小月龄宝宝照料经验：熟悉辅食添加、睡眠照料、出牙护理，会根据宝宝发育节奏安排抓握、撑坐、爬行等大运动练习和感官探索游戏，遵循蒙氏理念，保护宝宝专注力；日常融入英文儿歌、生活化英文启蒙，细致观察宝宝成长，每日同步宝宝情况。
+        拥有多年全英文幼儿机构从业经验，日常陪伴 2-8 岁幼儿，同时有 6 月龄小月龄宝宝照料经验：熟悉辅食添加、睡眠照料、出牙护理，会根据宝宝发育节奏安排抓握、撑坐、爬行等大运动练习和感官探索游戏，遵循蒙氏理念，保护宝宝专注力；日常融入英文儿歌、生活化英文启蒙，细致观察宝宝成长，每日同步宝宝情况。
         了解蒙氏教育理念，同时熟悉正面管教，在陪伴中践行温柔而坚定，懂得接纳孩子情绪、守住规则边界。擅长双语绘本共读、英文儿歌启蒙、儿童行为习惯引导，懂辅食制作，可安排手工、绘画、感官小游戏等丰富活动，把启蒙自然融入生活。
         已育一个孩子，教育理念：寓教于乐，尊重孩子自身成长节奏，保护孩子的好奇心，用心做好日间陪护与启蒙，让家长安心省心。
       </p>
@@ -159,6 +166,22 @@
     <p style="font-size:12px;color:#999;margin:10px 0 0">擅长中式面点（包子、花卷、馒头、烧麦、发糕）、川粤家常菜、宝宝辅食与营养搭配。</p>
   </section>
 
+
+  <section>
+    <h3 class="sec-title">客户好评</h3>
+    <p style="font-size:12.5px;color:#999;margin:0 0 12px">成都 · 程小玲草市街（化名）· 2026 年 6–9 月 · 全英文启蒙 + 成长陪伴期间真实评价</p>
+    <div class="reviews">
+      <div class="review-quote">"你做的好详细 👍"</div>
+      <div class="review-quote">"你的方式很好 😘"</div>
+      <div class="review-quote">"咱们宝贝适应能力和吸收能力棒棒哒"</div>
+      <div class="review-quote">"好奇宝宝 😊"</div>
+    </div>
+    <div class="review-imgs">
+      <figure><img src="resume_assets/review1.jpg" alt="客户好评截图1" /><figcaption>日常启蒙 + 大运动反馈</figcaption></figure>
+      <figure><img src="resume_assets/review2.jpg" alt="客户好评截图2" /><figcaption>英文启蒙 + 详细陪伴记录</figcaption></figure>
+      <figure><img src="resume_assets/review3.jpg" alt="客户好评截图3" /><figcaption>宝宝专注力观察分享</figcaption></figure>
+    </div>
+  </section>
   <footer>
     <span>杨阿姨 · 育儿师简历</span>
     <span>编号 009342 · 悦星高端家政</span>
