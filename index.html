@@ -44,6 +44,10 @@
   .cert{border:1px solid var(--line);border-left:4px solid var(--accent);background:#fffaf0;padding:10px 14px;border-radius:6px}
   .cert .n{font-weight:700;color:var(--ink);font-size:13.5px}
   .cert .d{font-size:12px;color:#999;margin-top:2px}
+  .cert-img-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+  .cert-img-grid figure{margin:0}
+  .cert-img-grid img{width:100%;height:240px;object-fit:contain;background:#fafafa;border-radius:6px;border:1px solid var(--line);padding:6px;display:block;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+  .cert-img-grid figcaption{font-size:11.5px;color:#999;text-align:center;margin-top:5px}
   .cert-img{margin-top:12px;display:flex;justify-content:center}
   .cert-img img{max-width:100%;max-height:420px;border-radius:8px;border:1px solid var(--line);box-shadow:0 4px 10px rgba(0,0,0,.06)}
   .dishes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
@@ -166,7 +170,7 @@
           <li>与家长保持每日沟通，反馈孩子成长亮点</li>
         </ul>
         <div class="achievement"><div class="ach-title">工作成果</div><ul>
-          <li>7 年累计陪伴 200+ 名 2-6 岁幼儿,设计主题课程覆盖感官、语言、社交、认知</li>
+          <li>7 年累计陪伴 70 多名 2-6 岁幼儿,设计主题课程覆盖感官、语言、社交、认知</li>
           <li>学员英文儿歌 / 绘本启蒙效果获家长持续好评,多人转介绍新家庭</li>
           <li>与家长保持每日成长反馈,班级续课率保持高位</li>
         </ul></div>
@@ -177,15 +181,19 @@
   <section>
     <h3 class="sec-title">资质证书</h3>
     <div class="cert-grid">
-      <div class="cert"><div class="n">蒙台梭利助教证（Montessori Assistant）</div><div class="d">2020.09 取得 · 跨国普教课程和大会项目颁发</div></div>
+      <div class="cert"><div class="n">蒙台梭利助教证（Montessori Assistant）</div><div class="d">2026.09.20 取得 · 跨国普教课程和大会项目颁发</div></div>
       <div class="cert"><div class="n">教师资格证（英语）</div><div class="d">2019.06 取得 · 教育部颁发</div></div>
       <div class="cert"><div class="n">专业英语四级（TEM-4）</div><div class="d">2019.04 · 成绩：优秀</div></div>
       <div class="cert"><div class="n">本科毕业证书</div><div class="d">英语专业 · 重庆人文科技学院</div></div>
       <div class="cert"><div class="n">C1 机动车驾驶证</div><div class="d">2019.05 初次领证 · 有效期至 2035.05</div></div>
       <div class="cert"><div class="n">普通话二级甲等</div><div class="d">语言表达清晰 · 适合儿童启蒙</div></div>
     </div>
-    <div class="cert-img">
-      <img src="resume_assets/mengshi.png" alt="蒙台梭利助教证书" />
+    <div class="cert-img-grid">
+      <figure><img src="resume_assets/cert-mengshi.png" alt="蒙台梭利助教证书" /><figcaption>蒙台梭利助教证 · 2026.09.20</figcaption></figure>
+      <figure><img src="resume_assets/cert-teacher.png" alt="教师资格证" /><figcaption>教师资格证（英语）· 2019.06</figcaption></figure>
+      <figure><img src="resume_assets/cert-degree.png" alt="本科毕业证书" /><figcaption>本科毕业证书 · 重庆人文科技学院</figcaption></figure>
+      <figure><img src="resume_assets/cert-degree-en.png" alt="专业英语四级" /><figcaption>专业英语四级（TEM-4）· 2019.04 优秀</figcaption></figure>
+      <figure><img src="resume_assets/cert-driver.png" alt="C1 机动车驾驶证" /><figcaption>C1 机动车驾驶证 · 2019.05</figcaption></figure>
     </div>
   </section>
 
