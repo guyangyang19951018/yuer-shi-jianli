@@ -56,6 +56,12 @@
   .usp-title{font-size:12.5px;font-weight:700;color:var(--accent2);letter-spacing:.5px;margin-bottom:6px}
   .usp-block ul{margin:0;padding-left:18px}
   .usp-block ul li{margin-bottom:4px;font-size:13px;line-height:1.7}
+  .pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .pain-card{background:#fffaf0;border:1px solid var(--line);border-radius:8px;padding:12px;transition:all .2s}
+  .pain-card:hover{border-color:var(--accent);box-shadow:0 4px 12px rgba(224,122,60,.1);transform:translateY(-2px)}
+  .pain-icon{font-size:24px;margin-bottom:4px}
+  .pain-title{font-weight:700;color:var(--accent2);font-size:13.5px;margin-bottom:4px}
+  .pain-desc{font-size:12px;color:var(--soft);line-height:1.6}
   .achievement{margin-top:10px;background:#fff7ec;border:1px solid #f0c896;border-left:4px solid var(--accent);border-radius:6px;padding:8px 12px}
   .ach-title{font-size:12px;font-weight:700;color:var(--accent2);letter-spacing:.5px;margin-bottom:4px}
   .achievement ul{margin:0;padding-left:18px}
@@ -68,7 +74,7 @@
   .review-imgs img{width:100%;height:380px;object-fit:cover;object-position:top;border-radius:8px;border:1px solid var(--line);display:block}
   .review-imgs figcaption{font-size:11.5px;color:#999;text-align:center;margin-top:4px}
   @media (max-width:640px){.review-imgs{grid-template-columns:1fr 1fr}.review-imgs img{height:300px}}
-  @media (max-width:640px){.head{flex-direction:column;padding:24px}.photo{width:140px;height:180px;margin:0 auto}.meta-grid{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:repeat(3,1fr)}.dishes,.cert-grid{grid-template-columns:1fr 1fr}section{padding:16px 22px}}
+  @media (max-width:640px){.head{flex-direction:column;padding:24px}.photo{width:140px;height:180px;margin:0 auto}.meta-grid{grid-template-columns:repeat(2,1fr)}.skill-grid{grid-template-columns:repeat(3,1fr)}.dishes,.cert-grid,.pain-grid{grid-template-columns:1fr 1fr}section{padding:16px 22px}}
 </style>
 </head>
 <body>
@@ -150,7 +156,7 @@
     <div class="exp">
       <div class="time">2019 — 2026<small>全英文机构主班</small></div>
       <div class="body">
-        <h4>全英文机构 · 幼儿主班教师</h4>
+        <h4>马丁叔叔学习乐园 · 全英文主班教师</h4>
         <p>负责 2–6 岁幼儿日间陪伴与课程落地 7 年。</p>
         <ul>
           <li>围绕孩子的兴趣与生活经验设计主题课程</li>
@@ -196,6 +202,43 @@
   </section>
 
 
+
+  <section>
+    <h3 class="sec-title">我能帮到您</h3>
+    <p style="font-size:12.5px;color:#999;margin:0 0 12px">以下场景,都是家长找我最常见的原因 —— 也是我最擅长解决的。</p>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-icon">🍚</div>
+        <div class="pain-title">宝宝不爱吃辅食 / 挑食</div>
+        <div class="pain-desc">从 6 月龄起,我可以根据宝宝发育节奏设计辅食方案,做到色香味+营养均衡,孩子从"喂两口就推开"到主动张嘴。</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">📱</div>
+        <div class="pain-title">孩子一玩手机就停不下来</div>
+        <div class="pain-desc">用蒙氏理念 + 感官游戏替代屏幕时间:抓握、拼图、绘本、手工、户外探索,孩子玩得投入,自然忘记电子产品。</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🗣️</div>
+        <div class="pain-title">想英语启蒙,但自己发音不准</div>
+        <div class="pain-desc">持英语专业四级 + 教师资格证双证,日常用简单英文跟孩子沟通,吃饭穿衣玩耍都是语言课。孩子开口说,妈妈再也不用担心自己口音。</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">👵</div>
+        <div class="pain-title">老人带娃理念冲突</div>
+        <div class="pain-desc">白天由我执行专业育儿方案,晚上家长下班后用文字+视频同步当日要点,让家里"两条线"对齐,减少摩擦。</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">😤</div>
+        <div class="pain-title">孩子动不动就哭闹 / 脾气大</div>
+        <div class="pain-desc">熟悉正面管教,践行"温柔而坚定"——接纳孩子情绪、守住规则边界。不吼不惯,孩子学会表达,而不是发泄。</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-icon">🍳</div>
+        <div class="pain-title">一日三餐不知道做什么</div>
+        <div class="pain-desc">擅长川粤家常 + 中式面点(包子、花卷、烧麦、发糕)+ 宝宝辅食与营养搭配,做到大人孩子都吃得好。</div>
+      </div>
+    </div>
+  </section>
   <section>
     <h3 class="sec-title">客户好评</h3>
     <p style="font-size:12.5px;color:#999;margin:0 0 12px">成都 · 程小玲草市街（化名）· 2026 年 6–9 月 · 全英文启蒙 + 成长陪伴期间真实评价</p>
