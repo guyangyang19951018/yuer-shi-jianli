@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8" />
@@ -26,6 +26,19 @@
   .meta .k{font-size:11px;color:#999;letter-spacing:.5px}
   .meta .v{font-size:13px;color:var(--ink);font-weight:600;margin-top:2px}
   .intro{font-size:13.5px;color:var(--soft);margin-top:14px;line-height:1.85;text-align:justify}
+  .intro-block{margin-top:14px}
+  .intro-hello{font-size:14.5px;color:var(--ink);line-height:1.7;padding:10px 14px;background:#fff7ec;border-left:3px solid var(--accent);border-radius:4px;margin-bottom:14px}
+  .intro-hello strong{color:var(--accent2);font-weight:700}
+  .intro-para{margin-bottom:14px;padding-bottom:14px;border-bottom:1px dashed var(--line)}
+  .intro-para:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+  .intro-h{font-size:13px;font-weight:700;color:var(--accent2);letter-spacing:1px;margin-bottom:6px}
+  .intro-para p{font-size:13px;color:var(--soft);line-height:1.85;margin:0 0 4px;text-align:justify}
+  .intro-para p:last-child{margin-bottom:0}
+  .intro-para p strong{color:var(--ink);font-weight:600}
+  .intro-para ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:4px}
+  .intro-para li{font-size:12.5px;color:var(--soft);line-height:1.7;padding-left:14px;position:relative}
+  .intro-para li::before{content:'u00b7';position:absolute;left:2px;color:var(--accent);font-weight:700}
+  .intro-para li b{color:var(--accent2)}
   section{padding:18px 36px;border-bottom:1px solid var(--line)}
   section:last-child{border-bottom:none}
   .sec-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--accent2);margin:0 0 12px}
@@ -40,13 +53,13 @@
   .exp .body p{margin:0;color:var(--soft);font-size:13px}
   .exp .body ul{margin:6px 0 0;padding-left:18px;color:var(--soft);font-size:13px}
   .exp .body ul li{margin-bottom:3px}
-  .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
   .cert{border:1px solid var(--line);border-left:4px solid var(--accent);background:#fffaf0;padding:10px 14px;border-radius:6px}
   .cert .n{font-weight:700;color:var(--ink);font-size:13.5px}
   .cert .d{font-size:12px;color:#999;margin-top:2px}
-  .cert-img-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+  .cert-img-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
   .cert-img-grid figure{margin:0}
-  .cert-img-grid img{width:100%;height:240px;object-fit:contain;background:#fafafa;border-radius:6px;border:1px solid var(--line);padding:6px;display:block;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+  .cert-img-grid img{width:100%;height:200px;object-fit:contain;background:#fafafa;border-radius:6px;border:1px solid var(--line);padding:6px;display:block;box-shadow:0 2px 6px rgba(0,0,0,.04)}
   .cert-img-grid figcaption{font-size:11.5px;color:#999;text-align:center;margin-top:5px}
   .cert-img{margin-top:12px;display:flex;justify-content:center}
   .cert-img img{max-width:100%;max-height:420px;border-radius:8px;border:1px solid var(--line);box-shadow:0 4px 10px rgba(0,0,0,.06)}
@@ -103,21 +116,45 @@
         <div class="meta"><span class="k">所属门店</span><span class="v">悦星高端家政</span></div>
         <div class="meta"><span class="k">语 言</span><span class="v">普通话二甲 / 英语口语</span></div>
       </div>
-      <p class="intro">
-        客户，您好！我是杨阿姨，本科毕业于重庆人文科技学院英语专业。在校期间一次性通过专业英语四级（优秀），并取得中学英语教师资格证、普通话二级甲等。
-        毕业后，我先在一家专升本教育机构担任英语教师，把复杂知识"讲得让孩子愿意听"这件事，我从那时起就在练。
-        后来加入马丁叔叔学习乐园担任主班教师，从小班一直带到毕业班，7 年里完整陪伴了 70 多名 2-6 岁孩子走过人生第一个"小社会"。
-        在这段日子里，我看到太多孩子本可以更好——有的错过了语言敏感期，有的没养成好习惯，有的吃得不讲究身体底子没打好。我越来越确信：0-6 岁那几年，比上什么兴趣班都重要。
-        因此我决定投身白班日间育儿陪伴，把这些年沉淀的英文启蒙、蒙氏理念、正面管教、辅食营养，一对一地给到一个家庭、一个孩子身上。
-        我的擅长：双语绘本共读、英文儿歌启蒙、儿童行为习惯引导、辅食添加（6 月龄起）、睡眠照料、出牙护理、洗澡抚触、感官探索游戏；懂大运动（抓握、撑坐、爬行），会用蒙氏方式保护孩子专注力；日常用简单英文和孩子沟通，把语言启蒙揉进吃饭、穿衣、玩耍里。
-        此外我也熟悉：手工、绘画、家庭营养餐、中式面点（包子、花卷、烧麦等），能根据宝宝发育节奏安排一日作息。
-        已育一个孩子。我的教育理念：寓教于乐，尊重孩子自身成长节奏，保护孩子的好奇心。用心做好日间陪护与启蒙，让家长安心省心。
-        <div class="usp-block"><div class="usp-title">我的差异化优势</div><ul>
-          <li><b>专业英语四级 + 教师资格证双证</b> — 启蒙不是"自己会英语就教"，我持证且 7 年实操，体系扎实。</li>
-          <li><b>日常用简单英文跟孩子沟通</b> — 吃饭、穿衣、玩耍每一个场景都是语言课，孩子不知不觉开口说。</li>
-          <li><b>英文儿歌 + 绘本 + 日常对话三合一</b> — 多种输入形式切换，孩子不排斥，妈妈群里口碑相传。</li>
-        </ul></div>
-      </p>
+      <div class="intro-block">
+        <div class="intro-hello">客户，您好！我是<strong>杨阿姨</strong>，英语本科 / 7 年从业 / 已育一个孩子 / 成都武侯。</div>
+
+        <div class="intro-para">
+          <div class="intro-h">▎个人背景</div>
+          <p>本科毕业于<strong>重庆人文科技学院英语专业</strong>，在校期间一次性通过<strong>专业英语四级（优秀）</strong>，并取得中学英语教师资格证、普通话二级甲等。毕业后，先在一家<strong>专升本教育机构</strong>担任英语教师，把"把复杂知识讲得让孩子愿意听"这件事从那时起就在练。</p>
+        </div>
+
+        <div class="intro-para">
+          <div class="intro-h">▎工作经历</div>
+          <p>后来加入<strong>马丁叔叔学习乐园</strong>担任主班教师，从小班一直带到毕业班，<strong>7 年里完整陪伴了 70 多名 2-6 岁孩子</strong>走过人生第一个"小社会"。</p>
+        </div>
+
+        <div class="intro-para">
+          <div class="intro-h">▎为什么选择白班育儿</div>
+          <p>在园里这些年，我看到太多孩子本可以更好——有的错过了语言敏感期，有的没养成好习惯，有的吃得不讲究身体底子没打好。我越来越确信：<strong>0-6 岁那几年，比上什么兴趣班都重要</strong>。所以我决定投身白班日间育儿陪伴，把这些年沉淀的英文启蒙、蒙氏理念、正面管教、辅食营养，<strong>一对一地</strong>给到一个家庭、一个孩子身上。</p>
+        </div>
+
+        <div class="intro-para">
+          <div class="intro-h">▎我的特长</div>
+          <p><strong>英文启蒙方向：</strong>双语绘本共读、英文儿歌启蒙、儿童行为习惯引导、日常用简单英文跟孩子沟通（吃饭 / 穿衣 / 玩耍都是语言课）。</p>
+          <p><strong>婴幼儿护理：</strong>辅食添加（6 月龄起）、睡眠照料、出牙护理、洗澡抚触、感官探索游戏；懂大运动（抓握、撑坐、爬行），会用蒙氏方式保护孩子专注力。</p>
+          <p><strong>生活技能：</strong>手工、绘画、家庭营养餐、中式面点（包子、花卷、烧麦等），能根据宝宝发育节奏安排一日作息。</p>
+        </div>
+
+        <div class="intro-para">
+          <div class="intro-h">▎我的差异化优势</div>
+          <ul>
+            <li><b>专业英语四级 + 教师资格证双证</b> — 启蒙不是"自己会英语就教"，我持证且 7 年实操，体系扎实。</li>
+            <li><b>日常用简单英文跟孩子沟通</b> — 吃饭、穿衣、玩耍每一个场景都是语言课，孩子不知不觉开口说。</li>
+            <li><b>英文儿歌 + 绘本 + 日常对话三合一</b> — 多种输入形式切换，孩子不排斥，妈妈群里口碑相传。</li>
+          </ul>
+        </div>
+
+        <div class="intro-para">
+          <div class="intro-h">▎我的教育理念</div>
+          <p>寓教于乐，<strong>尊重孩子自身成长节奏，保护孩子的好奇心</strong>。用心做好日间陪护与启蒙，让家长安心省心。</p>
+        </div>
+      </div>
     </div>
   </header>
 
